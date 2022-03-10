@@ -46,7 +46,7 @@ export default function CreateUser() {
   //usando o useMutation é possível ter acesso a vários tipos de informações
   //const { error, isLoading, isSuccess } = useMutation()
   const createUser = useMutation(async (user: CreateUserFormData) => {
-    const response = await api.post("users", {
+    const response = await api.post("/users", {
       user: {
         ...user,
         created_at: new Date(),

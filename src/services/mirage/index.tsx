@@ -33,7 +33,7 @@ export function makeServer() {
 
     //gerar 200 dados referente a tabela user
     seeds(server) {
-      server.createList("user", 200);
+      server.createList("user", 1);
     },
 
     //routes é o sistema de rotas que o MirageJS providencia para simular um sistema de rotas de um
